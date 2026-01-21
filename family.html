@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1200, initial-scale=1.0">
+  <title>My Family Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background-color: #f0e6f6;
+      color: #333;
+    }
+     /* NAVBAR */
+nav{
+  text-align:right;
+  padding:15px;
+}
+
+nav a{
+  color:rgb(19, 8, 168);
+  text-decoration:none;
+  margin:0 18px;
+  font-size:18px;
+}
+
+nav a:hover{
+  color:#4fc3f7;
+}
+
+    /* HEADER */
+    header {
+      font-size: 36px;
+      font-weight: bold;
+      margin-top: 40px;
+      color: #222;
+      position: relative;
+    }
+
+    header::after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 3px;
+      background-color: #ff9999;
+      margin: 8px auto;
+      border-radius: 2px;
+    }
+
+    header p {
+      font-size: 16px;
+      font-weight: normal;
+      margin-top: 10px;
+      color: #555;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    section {
+      padding: 40px 20px;
+    }
+
+    /* Family section */
+    .family-photo-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 0; /* no extra space below family photos */
+    }
+
+    /* Brothers section */
+    .brothers-section {
+      padding-top: 0;
+      margin-top: 0; /* remove all top space */
+    }
+
+    .brothers-section h2 {
+      margin: 0;
+      font-size: 28px;
+      color: #444;
+    }
+
+    .brothers-section .section-line {
+      width: 60px;
+      height: 3px;
+      background-color: #ff9999;
+      margin: 5px auto; /* very small spacing */
+      border-radius: 2px;
+    }
+
+    .brothers-section .description {
+      font-size: 16px;
+      max-width: 600px;
+      margin: 30px auto 40px auto; /* small spacing above & below description */
+      color: #555;
+    }
+
+    .brother-photo-row {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 60px; /* spacing below photos */
+    }
+
+    .photo-row img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+      margin: 0;
+    }
+
+    .photo-row img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="myself.html">Myself</a>
+    <a href="family.html">Family</a>
+    <a href="engineering.html">Engineering</a>
+    <a href="eto.html">ETO</a>
+  </nav>
+
+  <header>My Family</header>
+  <p class="description">
+    I really love my family. They always support me no matter what I do.
+  </p>
+
+  <!-- Family Photos -->
+  <section>
+    <div class="family-photo-row photo-row">
+      <img src="images\f1.jpeg" alt="Family Photo 1">
+      <img src="images\f2.jpeg" alt="Family Photo 2">
+      <img src="images\f3.jpeg" alt="Family Photo 3">
+    </div>
+  </section>
+
+  <!-- Brothers Section -->
+  <section class="brothers-section">
+    <h2>Brothers</h2>
+    <div class="section-line"></div>
+
+    <p class="description">
+      I really like my brothers. They always support me in everything I do. I feel happy when I am with them.
+    </p>
+
+    <div class="brother-photo-row photo-row">
+      <img src="images\b1.jpeg" alt="Brother 1">
+      <img src="images\b2.jpeg" alt="Brother 2">
+      <img src="images\b3.jpeg" alt="Brother 3">
+    </div>
+
+    <div class="section-line"></div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Engineering</title>
+
+<style>
+/* ===== RESET ===== */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+/* ===== BODY ===== */
+body{
+  background:#0d47a1;
+  min-height:100vh;
+}
+
+/* ===== NAVBAR ===== */
+nav{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:70px;
+  padding:15px 30px;
+  text-align:right;
+  background:rgba(255,255,255,0.95);
+  z-index:100;
+}
+
+nav a{
+  color:rgb(19, 8, 168);
+  text-decoration:none;
+  margin:0 18px;
+  font-size:18px;
+}
+
+nav a:hover{
+  color:#4fc3f7;
+}
+
+/* ===== MAIN LAYOUT ===== */
+.engineering-page{
+  margin-top:70px;                 /* navbar space */
+  height:calc(100vh - 70px);
+  display:flex;
+  align-items:center;
+  gap:40px;
+  padding:20px;
+}
+
+/* ===== LEFT VERTICAL IMAGE ===== */
+.left-vertical{
+  flex:1;
+  display:flex;
+  justify-content:flex-start;
+}
+
+.left-vertical-box{
+  width:320px;
+  aspect-ratio:3 / 4;              /* 2160 x 2880 */
+  overflow:hidden;
+  border-radius:16px;
+}
+
+.left-vertical-box img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* ===== CENTER VERTICAL TEXT ===== */
+.vertical-text{
+  display:flex;
+  flex-direction:column;
+  align-items:left;
+  justify-content:left;
+  gap:8px;
+}
+
+.vertical-text span{
+  color:white;
+  font-size:32px;
+  font-weight:bold;
+  letter-spacing:2px;
+}
+
+/* ===== RIGHT IMAGE GRID ===== */
+.right-grid{
+  flex:3;
+  display:grid;
+  grid-template-columns:repeat(3, 240px);
+ 
+  gap:45px;
+}
+
+/* SQUARE IMAGE */
+.square-box{
+  width:100%;
+  max-width:340px;
+  aspect-ratio:1/1 ;
+  overflow:hidden;
+  border-radius:16px;
+}
+
+.square-box img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <a href="index.html">Home</a>
+  <a href="myself.html">Myself</a>
+  <a href="family.html">Family</a>
+  <a href="engineering.html">Engineering</a>
+  <a href="eto.html">ETO</a>
+</nav>
+
+<!-- CONTENT -->
+<div class="engineering-page">
+
+  <!-- LEFT : VERTICAL IMAGE -->
+  <div class="left-vertical">
+    <div class="left-vertical-box">
+      <img src="C:\Users\ELCOT\Desktop\B\images\d3.jpeg" alt="Vertical Image">
+    </div>
+  </div>
+
+  <!-- CENTER : ENGINEERING TEXT -->
+  <div class="vertical-text">
+    <span>E</span><span>N</span><span>G</span><span>I</span>
+    <span>N</span><span>E</span><span>E</span><span>R</span>
+    <span>I</span><span>N</span><span>G</span>
+  </div>
+
+  <!-- RIGHT : 4 SQUARE IMAGES -->
+  <div class="right-grid">
+    <div class="square-box"><img src="images\e1.jpg"></div>
+    <div class="square-box"><img src="images\e2.jpeg"></div>
+    <div class="square-box"><img src="images\e3.jpeg"></div>
+    <div class="square-box"><img src="images\e4.jpeg"></div>
+    <div class="square-box"><img src="images\e5.jpeg"></div>
+    <div class="square-box"><img src="images\e8.jpeg"></div>
+    
+   </div>
+
+</div>
+
+</body>
+</html>

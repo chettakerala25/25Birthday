@@ -1,0 +1,121 @@
+/* ================= style.css (FULL UPDATED) ================= */
+
+* {
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+/* ================= NAVBAR ================= */
+nav {
+  position: fixed;          /* 🔥 constant navbar */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #000;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 10px 20px;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: orange;
+}
+
+/* ================= PAGE GAP (IMPORTANT) ================= */
+.page {
+  padding-top: 90px;   /* navbar height space */
+}
+
+/* ================= HERO IMAGE ================= */
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ================= CONTENT SECTION ================= */
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  gap: 30px;
+  background: white;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.section img {
+  width: 45%;
+  border-radius: 10px;
+}
+
+.section p {
+  font-size: 22px;
+  width: 45%;
+  text-align: center;
+}
+
+/* Reverse layout */
+.reverse {
+  flex-direction: row-reverse;
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+/* ===== MOBILE RESPONSIVE FIX ===== */
+/* ===== GLOBAL MOBILE RESPONSIVE ===== */
+@media (max-width:768px){
+
+  body{
+    margin:0;
+    overflow-x:hidden;
+  }
+
+  nav{
+    text-align:center;
+  }
+
+  .main,
+  .container,
+  .section{
+    flex-direction:column !important;
+    width:100%;
+  }
+
+  .image-grid{
+    width:95%;
+    grid-template-columns: repeat(2, 1fr);
+    gap:10px;
+    margin:auto;
+  }
+
+  .image-grid img{
+    width:100%;
+    aspect-ratio:1/1;
+    object-fit:cover;
+  }
+
+  .center-text,
+  .vertical-text{
+    writing-mode: horizontal-tb;
+    text-orientation: initial;
+    text-align:center;
+    margin:15px 0;
+    font-size:26px;
+  }
+}
